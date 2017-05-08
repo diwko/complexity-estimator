@@ -99,6 +99,7 @@ class ComplexityEstimator:
                 continue
 
         factor = sum(differences)/len(differences)
+        print(factor)
 
         if factor < 0.2:
             return 'O(1)'
@@ -136,7 +137,7 @@ def estimate_complexity(fun):
         data = estimator.estimate_complexity()
         print("Szacowana złożoność: {}".format(data[0]))
         return data
-    return tmp(0)
+    return tmp
 
 
 def write_fun_to_file(coefficients):
