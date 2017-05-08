@@ -10,14 +10,16 @@ def main():
     main_code_reader.read_from_file(args.main)
     main_f = main_code_reader.get_function()
 
-    init_f = lambda x: None
-    if args.initialize != None:
+    def do_nothing(x): pass
+
+    init_f = do_nothing
+    if args.initialize is not None:
         init_code_reader = CodeReader("_N_")
         init_code_reader.read_from_file(args.main)
         init_f = main_code_reader.get_function()
 
-    clean_f = lambda x: None
-    if args.clean != None:
+    clean_f = do_nothing
+    if args.clean is not None:
         clean_code_reader = CodeReader("_N_")
         clean_code_reader.read_from_file(args.main)
         clean_f = main_code_reader.get_function()

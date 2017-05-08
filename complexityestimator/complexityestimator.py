@@ -53,7 +53,8 @@ class ComplexityEstimator:
         try:
             problem_size = 1
             while problem_size < 10e8:
-                run_times.append((problem_size, self.get_exec_time(problem_size)))
+                run_times.append((problem_size,
+                                  self.get_exec_time(problem_size)))
                 problem_size *= 2
         except TimeReachedException:
             return run_times
@@ -99,7 +100,6 @@ class ComplexityEstimator:
                 continue
 
         factor = sum(differences)/len(differences)
-        print(factor)
 
         if factor < 0.2:
             return 'O(1)'
