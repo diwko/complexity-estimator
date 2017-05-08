@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='ComplexityEstimator',
+setup(name='complexity-estimator',
       version='0.1',
       description='Estimate function complexity',
       url='https://github.com/AGHPythonCourse2017/zad2-lysy352',
