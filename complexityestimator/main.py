@@ -1,6 +1,6 @@
-from codereader import CodeReader
-from complexityestimator import ComplexityEstimator
-from args_parser import parser
+from complexityestimator.codereader import CodeReader
+from complexityestimator.complexityestimator import ComplexityEstimator
+from complexityestimator.args_parser import parser
 
 
 def main():
@@ -26,5 +26,3 @@ def main():
     data = estimator.estimate_complexity()
 
     print("Szacowana złożoność: %s" % data[0])
-
-main()
