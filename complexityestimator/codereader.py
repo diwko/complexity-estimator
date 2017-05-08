@@ -15,11 +15,11 @@ class CodeReader:
     def read_from_string(self, text):
         self.code = text
 
-    def get_function(self):
+    def get_function(self, scope={}):
         code = self.code
         mark = self.mark
 
         def fun(problem_size):
-            exec(('%s = %d' % (mark, problem_size)), globals())
-            exec(code, globals())
+            exec(('%s = %d' % (mark, problem_size)), scope)
+            exec(code, scope)
         return fun
