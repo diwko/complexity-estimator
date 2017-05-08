@@ -8,4 +8,9 @@ setup(name='complexity-estimator',
       author_email='dawid.siwko@gmail.com',
       license='MIT',
       packages=['complexityestimator'],
+      entry_points={
+          'console_scripts': [
+              'complexity-estimator = complexityestimator.main:main'
+          ]
+      },
       zip_safe=False)

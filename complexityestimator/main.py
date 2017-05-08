@@ -21,7 +21,6 @@ def main():
         clean_code_reader = CodeReader("_N_")
         clean_code_reader.read_from_file(args.main)
         clean_f = main_code_reader.get_function()
-        print("AAA")
 
     estimator = ComplexityEstimator(init_f, main_f, clean_f, args.timeout)
     data = estimator.estimate_complexity()

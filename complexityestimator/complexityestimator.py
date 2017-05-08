@@ -52,7 +52,7 @@ class ComplexityEstimator:
         run_times = []
         try:
             problem_size = 1
-            while True:
+            while problem_size < 10e8:
                 run_times.append((problem_size, self.get_exec_time(problem_size)))
                 problem_size *= 2
         except TimeReachedException:
