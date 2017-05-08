@@ -116,7 +116,7 @@ class ComplexityEstimator:
         elif factor < 8.5:
             return 'O(N^4)'
         elif factor < 16.5:
-            return 'O(N^4)'
+            return 'O(N^5)'
         else:
             return "Duża złożoność, może nawet wykładnicza :("
 
