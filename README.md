@@ -1,3 +1,41 @@
+## Instalacja
+```bash
+pip install git+https://github.com/AGHPythonCourse2017/zad2-lysy352.git
+```
+
+## Obsługa
+```bash
+usage: complexity-estimator [-h] [-i INITIALIZE] [-c CLEAN] [-t TIMEOUT] main
+```
+
+Aby oszacować żłożoność niezbędny jest plik z programem.
+Dodatkowo możemy podać po opcji:
+ - i plik inicjalizujący zasoby
+ - c plik zwalniający zasoby
+ - t czas testowania (domyślnie 30s.)
+ 
+<b>Należy pamiętać, aby rozmiar względem, którego będziemy szcować zamienić w naszych plikach na: \_N\_</b><br>
+
+Jako wynik otrzymamy przypuszczalną złożoność oraz dwa programy:
+- size_estimate_fun.py - szacuje maksymalną wielkość problemu dla zadanego czasu
+- time_estimate_fun.py - szacuje czas wykonania problemu dla zadanej wielkości 
+
+### Przykład
+```python
+# plik: inicjalizacja.py
+test_list = [x for x in range(_N_)]
+```
+
+```python
+# plik: test.py
+test_list.sort()
+```
+
+```bash
+complexity-estimator test.py -i inicjalizacja.py -t 10
+```
+
+
 # Programowanie w jezyku Python 2016/2017 zadanie 2
 
 W celu oszacowania czasu wykonania programu kuszące jest czasem zalozyc liniowa złożoność obliczeniowa.
