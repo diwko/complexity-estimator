@@ -1,6 +1,9 @@
+#Complexity-Estimator
+Prosty program próbujący przwidzieć żłożoność obliczeniową.
+
 ## Instalacja
 ```bash
-pip install git+https://github.com/AGHPythonCourse2017/zad2-lysy352.git
+pip install git+https://github.com/diwko/complexity-estimator.git
 ```
 
 ## Obsługa
@@ -35,8 +38,9 @@ test_list.sort()
 complexity-estimator test.py -i inicjalizacja.py -t 10
 ```
 
+## Treść zadania:
 
-# Programowanie w jezyku Python 2016/2017 zadanie 2
+### Programowanie w jezyku Python 2016/2017 zadanie 2
 
 W celu oszacowania czasu wykonania programu kuszące jest czasem zalozyc liniowa złożoność obliczeniowa.
 Czas sortowania możemy oszacować monotonicznej listy na 17.9 us dla 1000 elementów:
@@ -82,7 +86,3 @@ Program powinien przejść test flake8 (zgodność z PEP8).
 Za wykonania zadania mozna zdobyc maksymalnie 0.9 punktu.
 
 Dodatkowo trzeba wykonać trzy recenzje rozwiązań zadania nr 1 i umieścić w repozytorium w pliku review.txt odnośniki do odpowiednich “Pull request”. Ten fragment zadania umożliwia zdobycie maksymalnie 0.1 punktu.
-
-Tresc zadania w Google Drive: https://goo.gl/r87sPE
-
-Termin oddania zadania: 8 maja 2017, 20:00

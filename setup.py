@@ -3,9 +3,9 @@ from setuptools import setup
 setup(name='complexity-estimator',
       version='0.1',
       description='Estimate function complexity',
-      url='https://github.com/AGHPythonCourse2017/zad2-lysy352',
+      url='https://github.com/diwko/complexity-estimator',
       author='Dawid Siwko',
-      author_email='dawid.siwko@gmail.com',
+      author_email='dawidsiwko@gmail.com',
       license='MIT',
       packages=['complexityestimator'],
       entry_points={
